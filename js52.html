@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h1>JS DOM example</h1>
+  <p>This is the 1st para</p>
+   <p>This is the 2nd para</p>
+  <p>This is the 3rd para</p>
+  <button onclick="myfunction()">Try it</button>
+<script>
+  function myfunction(){
+  var x=document.getElementsByTagName('p');
+  var i;
+  for(i=0;i<x.length;i++){
+  	x[i].style.color='red';
+  	x[i].style.fontWeight="bold";
+  }
+}
+</script>
+</body>
+</body>
+</html>

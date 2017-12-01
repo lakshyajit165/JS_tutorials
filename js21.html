@@ -1,0 +1,18 @@
+<!DOCTYPE.html>
+<html>
+   <body>
+     <h2>Replacing a String</h2>
+     <p id="demo">Please Visit Microsoft and Microsoft!</p>
+	 <button onclick="myfunction()">Try it</button>
+   
+   <script>
+      
+	  function myfunction()
+	  {
+	  var str=document.getElementById('demo').innerHTML;
+	  var rep=str.replace(/Microsoft/gs,"W3Schools");
+	  document.getElementById('demo').innerHTML=rep;
+      }
+   </script>
+   </body>
+</html>

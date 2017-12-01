@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p id="demo"></p>
+	<script>
+	  function person(first,last age,eye){
+	    this.fname=first;
+	    this.lname=last;
+	    this.age=age;
+	    this.eyecolor=eye;
+	   }
+	   var father = new person("John","Doe",24,"black");
+	   var mother=new person("sally","rally",20,"brown");
+	   document.getELementById('demo').innerHTML=
+	   "My Father is "+father.age+"My Mother is "+mother.age;
+	</script>
+  </body>
+</html>

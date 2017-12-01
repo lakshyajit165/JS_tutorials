@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+  </head>
+  <body>
+    <h2>Object Properties</h2>
+	<p id="demo"></p>
+	
+	<script>
+	  var person={fname:"Lk",lname:"das",age:23,fullname:function(){return this.fname+" "+this.lname}};
+	  document.getElementById('demo').innerHTML=person.fullname();
+	</script>
+  </body>
+</html>

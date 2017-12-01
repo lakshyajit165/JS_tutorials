@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+   <head>
+     <meta charset="utf-8"/>
+	 <title>Changing Image</title>
+	 <script>
+	    var img_tracker='f';
+		function change(){
+		  var image=document.getElementById('social').innerHTML;
+		  if(img_tracker=='f'){
+		     image.src="sunset.jpg";
+			img_tracker='t';
+		     
+		  }else{
+		    image.src="facebook.jpg";
+		      img_tracker='f';
+		  }
+		  
+		}		
+	 </script>
+   </head>
+   <body>
+      <img src="facebook.jpg" alt="social_logo" id='social'><br/>
+	  <button type="button" onclick="change()">Change</button>
+   </body>
+</html>

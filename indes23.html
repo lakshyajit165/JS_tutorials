@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style23.css"/>
+  </head>
+  <body>
+    <button onclick="mymove()">Click Here</button>
+	<div id="container">
+	<div id="animate"></div>
+	</div>
+	<script>
+	  function mymove(){
+	    var elem=document.getElementById('animate');
+		var pos=0;
+		var id=setInterval(frame,50);
+		function frame(){
+		  if(pos==350){
+		    clearInterval(id);
+		  }else{
+		    pos++;
+			elem.style.top=pos+'px';
+			elem.style.left=pos+'px';
+		  }
+		}
+	  }
+	</script>
+  </body>
+</html>

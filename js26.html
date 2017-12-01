@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p> 
+
+<script>
+   var car=["mercedes","BMW","Ferrari"];
+   var clen=car.length;
+   var i;
+   var text="<ul>";
+   for(i=0;i<clen;i++){
+     text+="<li>"+car[i]+"</li>";
+   }
+   document.getElementById('demo').innerHTML=text;
+</script>
+
+</body>
+</html>

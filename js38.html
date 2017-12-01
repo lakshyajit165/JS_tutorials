@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    
+		<p>Answer this</p>
+		<input type="radio" name="radio" value="1" id="r1">1st<br>
+		<input type="radio" name="radio" value="2" id="r1">2nd<br>
+		<button type="button" onclick="myfunction()">Submit</button>
+	
+	<p id="demo1"></p>
+	<p id="demo2"></p>
+    <script>
+		function myfunction(){  
+		  var x=document.getElementById('r1').value;
+		  
+		  document.getElementById('demo1').innerHTML=x;
+		  
+		 } 
+	</script>
+  </body>
+ </html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  div{
+  	background-color: coral;
+  	border:1px solid;
+  	padding:50px;
+  }
+</style>
+</head>
+</body>
+<div id="mydiv">
+  <p id="myp">Click this paragraph,I am Bubbling</p>
+</div><br>
+<div id="mydiv2">
+  <p id="myp2">Click this paragraph,I am capturing</p>
+</div>
+<script>
+  document.getElementById('myp').addEventListener('click',function(){
+  	alert('You clicked the P element');},false);
+  document.getElementById('mydiv').addEventListener('click',function(){
+  	alert('You clicked the Div element');},false);
+  document.getElementById('myp2').addEventListener('click',function(){
+  	alert('You clicked the P element');},true);
+  document.getElementById('mydiv2').addEventListener('click',function(){
+  	alert('You clicked the Div element');},true);
+</script>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Javascript</title>
+  </head>
+  <body>
+    <p id="text">Hello World!</p>
+	<button id="btn">Click</button>
+    <script type="text/javascript">
+	    var x=document.getElementById('text').innerHTML;
+		document.getElementById('btn').onclick=function(){
+		  document.getElementById('text').innerHTML=x+" Hello ELkay!";
+		}
+	   
+	</script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <input type="number" id="id1" min="300">
+	<button type ="button" onclick="myfunction()">OK</button>
+	<p id="demo"></p>
+	<script>
+	  function myfunction(){
+	    var text="";
+		if(document.getElementById("id1").validity.rangeUnderflow){
+		  text="value too small";
+		}else{
+		  text="INput OK";
+		}
+		document.getElementById('demo').innerHTML=text;
+	  }
+	</script>
+  </body>
+</html>

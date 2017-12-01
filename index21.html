@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <body>
+  <div id="outer">
+    <p>This is para 1</p>
+	<p>This is para 2</p>
+	<p id="demo"></p>
+  </div>
+  <script>
+    var x=document.getElementById('outer');
+	var y=x.getElementsByTagName('p');
+	document.getElementById('demo').innerHTML="The first paragraph inside outer is:"+y[0].innerHTML;
+  </script>
+  </body>
+</html>

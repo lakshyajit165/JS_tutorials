@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <img src="wallpaper.jpg" alt="social logo" id="social" height="200px" width="200px" onclick="change();">
+	<script>
+	  var image_tracker='w';
+	  function change(){
+	    var image=document.getElementById('social');
+		if(image_tracker='w'){
+		  image.src='wallpaper.jpg';
+		  image_tracker='s';
+		}else{
+		  image.src='sunset.jpg';
+		  image_tracker='w';
+		}
+	  }
+    </script>	
+  </body>
+</html>

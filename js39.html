@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>Javascript can change HTML elements</h2>
+    <p id ="demo">Click the button to find out!!</p><br>
+    <button type="button" onclick="myfunction()">Click</button>
+    <script>
+      function myfunction(){
+        document.getElementById('demo').innerHTML="I am Changed!!";
+      }
+    </script>
+  </body>
+</html>

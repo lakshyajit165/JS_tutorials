@@ -1,0 +1,24 @@
+ ul{
+	overflow:hidden;
+	margin: 0;
+	padding:0;
+	list-style-type: none;
+}
+
+
+ li{
+	float:left;
+}	
+ li a{
+	text-decoration: none;
+	color:white;
+	background-color: black;
+	display:block;
+	text-align:center;
+	padding:30px;
+	font-family:Verdana;
+}
+li a:hover{
+	color:black;
+	background-color:grey;
+}

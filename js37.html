@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    What is Your Name:<input type="text" id="name"><br>
+	<button type="button" id="ok" onclick="myfunction()">Done</button>
+	<p id="demo"></p>
+	<script>
+	  function myfunction(){
+	    var x=document.getElementById('name').value;
+		if(x=="lk"){
+		  document.getElementById('demo').innerHTML="Welcome LK!!";
+		}
+	  }
+	</script>
+  </body>
+</html>

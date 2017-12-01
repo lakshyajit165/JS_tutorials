@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p id="demo"></p>
+	<script>
+	  var person={
+	    fname:"John",
+		lname:"Doe",
+		age:23,
+		fullName:function(){
+		  return this.fname+" "+this.lname;
+		}
+	  }
+	  var x=person.fullName();
+	  document.getElementById('demo').innerHTML=x;
+	</script>
+  </body>
+</html>
